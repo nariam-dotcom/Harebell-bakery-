@@ -23,6 +23,24 @@
             <button class="filter-button" onclick="filterCategory('pastries')">Pastries</button>
             <button class="filter-button favorite-button" onclick="showFavorites()">❤️ Favorites</button>
         </div>
+        <div id="gallery-grid" class="gallery-grid">
+  </div>
+  <div id="lightbox" class="lightbox">
+    <span class="close-button" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+        <button class="prev-button" onclick="navigateImage(-1)">&#10094;</button>
+        <div class="lightbox-card">
+            <img id="lightbox-img" src="" alt="Gallery Preview">
+            <div class="lightbox-details">
+                <h3 id="lightbox-title"></h3>
+                <span id="lightbox-tag">Category</span>
+                <p id="lightbox-description"></p>
+                <button id="lightbox-favorite-button">❤️Favorite</button>
+            </div>
+        </div>
+        <button class="next-button" onclick="navigateImage(1)">&#10095</button>
+    </div>
+  </div>
 
     </section>
     
