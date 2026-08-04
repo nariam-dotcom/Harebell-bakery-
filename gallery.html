@@ -10,8 +10,20 @@
     <section class="gallery-section">
         <div class="gallery-header">
             <h2>Our Bakery Gallery</h2>
-            <p>Explore ou freshly baked cakes, breads, and treats!</p>
+            <p>Explore our freshly baked cakes, breads, and treats!</p>
         </div>
+        <div class="gallery-search-box">
+            <input type="text" id="gallery-search" placeholder="Search gallery">
+        </div>
+        <div class="gallery-filter-buttons">
+            <button class="filter-button active" onclick="filterCategory('all')">All</button>
+            <button class="filter-button" onclick="filterCategory('cakes')">Cakes</button>
+            <button class="filter-button" onclick="filterCategory('breads')">Breads</button>
+            <button class="filter-button" onclick="filterCategory('cookies')">Cookies</button>
+            <button class="filter-button" onclick="filterCategory('pastries')">Pastries</button>
+            <button class="filter-button favorite-button" onclick="showFavorites()">❤️ Favorites</button>
+        </div>
+
     </section>
     
 </body>
