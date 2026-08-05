@@ -1,7 +1,7 @@
 .head {
     font-family: cursive;
     text-align: center;
-    color: rgb(131, 102, 61);
+    color: rgb(233, 217, 193);
 
 }
 
@@ -35,5 +35,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrCJ2G-UgnielTH9izk64x-j0qufR5MGepF7l5G1eCsTs9PRqotWFreg&s) ;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfquyrJbhCvUHSt9zWtxJOdU7XflQWxwVttJrsjuvK_w&s=10) ;
+}
+
+.history {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(7, 0, 13);
+    font-size: large ;
+    font-weight: bolder;
 }
