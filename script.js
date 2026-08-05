@@ -12,3 +12,22 @@ if (hour < 12) {
 }
 
 hello.textContent = result
+
+document.addEventListener("click", function (event) {
+
+    let icon = document.createElement("span");
+
+    icon.textContent = "🧁"; 
+
+    icon.style.position = "absolute";
+    icon.style.left = event.pageX + "px";
+    icon.style.top = event.pageY + "px";
+    icon.style.fontSize = "30px";
+    icon.style.pointerEvents = "none";
+
+    document.body.appendChild(icon);
+
+    setTimeout(function () {
+        icon.remove();
+    }, 1000);
+});
