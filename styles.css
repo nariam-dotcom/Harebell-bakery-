@@ -24,3 +24,16 @@
         transform: translateY(10);
     }
 }
+
+#txt {
+    text-align:right;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.up{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrCJ2G-UgnielTH9izk64x-j0qufR5MGepF7l5G1eCsTs9PRqotWFreg&s) ;
+}
