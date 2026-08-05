@@ -1,3 +1,28 @@
+body {
+    background-color: #eee5d9;
+    color: #333;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.dark-mode {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+#darkModeBtn {
+    padding: 10px 20px;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#darkModeBtn:hover {
+    background-color: #a0522d;
+}
+
 .head {
     font-family: cursive;
     text-align: center;
@@ -25,26 +50,33 @@
     }
 }
 
-#txt {
-    text-align:right;
+.txt {
+   font-family: cursive;
+   font-size: large;
+   text-align: right;
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .up{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfquyrJbhCvUHSt9zWtxJOdU7XflQWxwVttJrsjuvK_w&s=10) ;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSHiMvdtjwhzmG0RgV0iOvGzChBcJZk11lDFlFWNY3iA&s=10) ;
 }
 
 .history {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(7, 0, 13);
+    color: rgb(233, 209, 254);
     font-size: large ;
     font-weight: bolder;
 }
-
+ 
+#header {
+    text-align: center;
+    font-family: cursive;
+    font-style: oblique;
+    font-display: block;
+}
 #team {
     display: flex;
     flex-wrap: wrap;
@@ -52,16 +84,21 @@
     gap: 20px;
     padding: 20px;
 }
+
+.member {
+    width: 45%;
+}
 #team img {
     width: 100%;
-    height: 250px;
+    height: 350px;
     object-fit: cover;
     border-radius: 15px;
     border: 5px solid #d4a373;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s ease;
-    
+
 }
+
 #team img:hover {
     transform: scale(1.05);
 }

@@ -13,6 +13,18 @@ if (hour < 12) {
 
 hello.textContent = result
 
+let button = document.getElementById("darkModeBtn");
+
+button.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        button.textContent = "☀️ Light Mode";
+    } else {
+        button.textContent = "🌙 Dark Mode";
+    }
+});
+
 document.addEventListener("click", function (event) {
 
     let icon = document.createElement("span");
@@ -22,12 +34,31 @@ document.addEventListener("click", function (event) {
     icon.style.position = "absolute";
     icon.style.left = event.pageX + "px";
     icon.style.top = event.pageY + "px";
-    icon.style.fontSize = "30px";
+    icon.style.fontSize = "10px";
     icon.style.pointerEvents = "none";
 
     document.body.appendChild(icon);
 
     setTimeout(function () {
-        icon.remove();
+       // icon.remove();
     }, 1000);
+});
+
+let button = document.getElementById("readBtn");
+let aboutText = document.getElementById("aboutText");
+
+let shortText = "";
+
+let fullText = "";
+
+button.addEventListener("click", function () {
+
+    if (button.textContent === "Read More") {
+        aboutText.textContent = fullText;
+        button.textContent = "Read Less";
+    } else {
+        aboutText.textContent = shortText;
+        button.textContent = "Read More";
+    }
+
 });
