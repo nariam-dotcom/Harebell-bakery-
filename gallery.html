@@ -10,9 +10,38 @@
     <section class="gallery-section">
         <div class="gallery-header">
             <h2>Our Bakery Gallery</h2>
-            <p>Explore ou freshly baked cakes, breads, and treats!</p>
+            <p>Explore our freshly baked cakes, breads, and treats!</p>
         </div>
+        <div class="gallery-search-box">
+            <input type="text" id="gallery-search" placeholder="Search gallery">
+        </div>
+        <div class="gallery-filter-buttons">
+            <button class="filter-button active" onclick="filterCategory('all')">All</button>
+            <button class="filter-button" onclick="filterCategory('cakes')">Cakes</button>
+            <button class="filter-button" onclick="filterCategory('breads')">Breads</button>
+            <button class="filter-button" onclick="filterCategory('cookies')">Cookies</button>
+            <button class="filter-button" onclick="filterCategory('pastries')">Pastries</button>
+            <button class="filter-button favorite-button" onclick="showFavorites()">❤️ Favorites</button>
+        </div>
+        <div id="gallery-grid" class="gallery-grid">
+  </div>
+  <div id="lightbox" class="lightbox">
+    <span class="close-button" onclick="closeLightbox()">close</span>
+    <div class="lightbox-content">
+        <button class="prev-button" onclick="navigateImage(-1)">prev</button>
+        <div class="lightbox-card">
+            <img id="lightbox-img" src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/xmob7pmabwelitakp9wc" alt="Gallery Preview">
+            <div class="lightbox-details">
+                <h3 id="lightbox-title"></h3>
+                <span id="lightbox-tag">Category</span>
+                <p id="lightbox-description"></p>
+                <button id="lightbox-favorite-button">❤️Favorite</button>
+            </div>
+        </div>
+        <button class="next-button" onclick="navigateImage(1)">next</button>
+    </div>
+  </div>
     </section>
-    
+    <script src="gallery.js"></script>
 </body>
 </html>
