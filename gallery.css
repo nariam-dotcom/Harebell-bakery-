@@ -35,3 +35,11 @@ body {
     justify-content:center ;
     align-items: center;
 }
+.lightbox-content{
+    background:#fffdf5;
+    padding: 20px;
+    border-radius: 8px;
+    border:2px solid #fce4ec;
+    display: flex;
+    align-items: center;
+}
