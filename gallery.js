@@ -32,7 +32,6 @@ isFav: false
 let activeList = items;
 let currentIndex = 0;
 
-// 2. Display cards
 function renderGrid(data) {
   const grid = document.getElementById("gallery-grid");
   grid.innerHTML = "";
@@ -45,4 +44,13 @@ function renderGrid(data) {
       </div>
     `;
   });
+}
+function filterCategory(cat) {
+  activeList = (cat === 'all') ? items : items.filter(item => item.category === cat);
+  renderGrid(activeList);
+}
+
+function showFavorites() {
+  activeList = items.filter(item => item.isFav === true);
+  renderGrid(activeList);
 }
