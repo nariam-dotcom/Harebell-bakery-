@@ -7,3 +7,13 @@ body {
     text-align: center;
     color: #d86b85;
 }
+.gallery-cards{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px, 1fr));
+    gap: 15px;
+}
+.gallery-cards{
+    background:#fff8e7;
+    border-radius:8px;
+    border: ;
+}
