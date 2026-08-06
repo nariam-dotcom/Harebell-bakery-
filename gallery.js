@@ -28,3 +28,21 @@ img: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400",
 isFav: false
 }
 ];
+
+let activeList = items;
+let currentIndex = 0;
+
+// 2. Display cards
+function renderGrid(data) {
+  const grid = document.getElementById("gallery-grid");
+  grid.innerHTML = "";
+
+  data.forEach((item, index) => {
+    grid.innerHTML += `
+      <div class="gallery-card" onclick="openLightbox(${index})">
+        <img src="${item.img}" alt="${item.title}">
+        <h3>${item.title}</h3>
+      </div>
+    `;
+  });
+}
