@@ -4,6 +4,61 @@ body {
     transition: background-color 0.4s, color 0.4s;
 }
 
+/* Header */
+header{
+    background:#7b3f00;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+/* Navigation Bar */
+.navbar{
+    width:90%;
+    margin:auto;
+    padding:18px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Logo */
+.navbar h1{
+    color:white;
+    font-size:30px;
+    letter-spacing:1px;
+}
+
+/* Navigation Links */
+nav{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:500;
+    padding:8px 14px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+/* Hover Effect */
+nav a:hover{
+    background:#ffd166;
+    color:#7b3f00;
+}
+
+/* Active Page */
+nav a.active{
+    background:white;
+    color:#7b3f00;
+}
+
 .dark-mode {
     background-color: #1f1f1f;
     color: white;
