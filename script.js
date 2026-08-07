@@ -76,3 +76,41 @@ factBtn.addEventListener("click", function () {
     let random = Math.floor(Math.random() * facts.length);
     factText.textContent = facts[random];
 });
+
+let sliderImage = document.getElementById("sliderImage");
+
+let images = [
+    "pics/bakery 2.jpe",
+    "pics/bakery 3.jpe",
+    "pics/bakery 4.jpe",
+    "pics/bakery 5.jpe"
+];
+
+let currentImage = 0;
+
+function nextImage() {
+    currentImage++;
+
+    if (currentImage >= images.length) {
+        currentImage = 0;
+    }
+
+    sliderImage.src = images[currentImage];
+}
+
+function previousImage() {
+    currentImage--;
+
+    if (currentImage < 0) {
+        currentImage = images.length - 1;
+    }
+
+    sliderImage.src = images[currentImage];
+}
+
+document.querySelector(".next").addEventListener("click", nextImage);
+
+document.querySelector(".prev").addEventListener("click", previousImage);
+
+// Automatic slideshow every 5 seconds
+setInterval(nextImage, 5000);
