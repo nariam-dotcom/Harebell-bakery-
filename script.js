@@ -59,3 +59,20 @@ read.addEventListener("click", function () {
         read.textContent = "Read More";
     }
 });
+
+const facts = [
+    " We bake fresh bread every morning!",
+    " Our cookies are baked daily.",
+    " We make custom cakes for every celebration.",
+    " Every pastry is handmade with care.",
+    " Coffee and croissants are our most popular breakfast combo.",
+    " Harebell Bakery has served the community since 1995."
+];
+
+let factBtn = document.getElementById("factBtn");
+let factText = document.getElementById("factText");
+
+factBtn.addEventListener("click", function () {
+    let random = Math.floor(Math.random() * facts.length);
+    factText.textContent = facts[random];
+});

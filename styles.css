@@ -117,3 +117,14 @@ body {
 #readBtn:hover {
     background-color: #a0522d;
 }
+
+#factText {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#factBtn {
+    box-shadow: #b99277;
+    padding: 1%;
+    background-color: #a0522d;
+}
+
