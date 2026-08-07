@@ -25,7 +25,7 @@ body {
 
 .head {
     font-family: cursive;
-    text-align: left;
+    text-align: center;
     color: rgb(116, 59, 3);
 
 }
@@ -54,7 +54,7 @@ body {
    font-family: cursive;
    font-size: large;
    color: rgb(244, 164, 5);
-   text-align: right;
+   text-align: center;
 
 }
 
