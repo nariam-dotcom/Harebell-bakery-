@@ -3,6 +3,9 @@
 - html 
 - css
 - javascript
+
+## website url
+- https://nariam-dotcom.github.io/Harebell-bakery-/
 ## set up instructions
 - create development branch
 - create maureen/aboutpage branch
