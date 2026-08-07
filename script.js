@@ -114,3 +114,19 @@ document.querySelector(".prev").addEventListener("click", previousImage);
 
 // Automatic slideshow every 5 seconds
 setInterval(nextImage, 5000);
+
+let questions = document.querySelectorAll(".question");
+
+questions.forEach(function (question) {
+    question.addEventListener("click", function () {
+
+        let answer = this.nextElementSibling;
+
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+
+    });
+});

@@ -170,3 +170,42 @@ body {
 .slider button:hover {
     background: rgba(0,0,0,0.8);
 }
+
+#faq {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+#faq h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.question {
+    width: 100%;
+    background: #d2691e;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.question:hover {
+    background: #a0522d;
+}
+
+.answer {
+    display: none;
+    background: #fff8f0;
+    padding: 15px;
+}
