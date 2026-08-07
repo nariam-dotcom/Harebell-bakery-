@@ -17,7 +17,9 @@
 - history with read more/less
 - team pictures
 - fun fact button
-- 
+- image slider
+- FAQ section
+- footer
 ## created by
 - maureen nyaboke
 ## licences
