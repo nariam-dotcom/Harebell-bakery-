@@ -1,9 +1,9 @@
 
 let images = [
-"home 1.jpeg",
-"home 2.jpeg",
-"home 4.jpeg",
-"home 5.jpeg"
+" pics/home 1.jpeg",
+" pics/home 2.jpeg",
+" pics/home 4.jpeg",
+" pics/home 5.jpeg"
 ];
 
 let index = 0;
