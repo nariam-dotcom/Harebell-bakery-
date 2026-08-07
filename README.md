@@ -11,6 +11,7 @@
 - work on css
 - work on javascript
 - check functionality of page
+- merge work to dev branch
 ## features 
 - dark mode toggle
 - history with read more/less
