@@ -3,8 +3,19 @@
 - html 
 - css
 - javascript
-## 
+## set up instructions
+- create development branch
+- create maureen/aboutpage branch
+- create folder and files
+- work on html
+- work on css
+- work on javascript
+- check functionality of page
 ## features 
+- dark mode toggle
+- history with read more/less
+- team pictures
+- fun fact button
 - 
 ## created by
 - maureen nyaboke
