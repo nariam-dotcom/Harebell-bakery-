@@ -1,5 +1,5 @@
 body {
-    background-color: #eee5d9;
+    background-color: #72634a;
     color: #333;
     transition: background-color 0.4s, color 0.4s;
 }
@@ -25,7 +25,7 @@ body {
 
 .head {
     font-family: cursive;
-    text-align: center;
+    text-align: left;
     color: rgb(233, 217, 193);
 
 }
@@ -53,6 +53,7 @@ body {
 .txt {
    font-family: cursive;
    font-size: large;
+   color: beige;
    text-align: right;
 
 }
@@ -61,10 +62,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSHiMvdtjwhzmG0RgV0iOvGzChBcJZk11lDFlFWNY3iA&s=10) ;
+    background: linear-gradient(to right, purple, brown);
+    
 }
-
-.history {
+#history {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(233, 209, 254);
     font-size: large ;
@@ -101,4 +102,18 @@ body {
 
 #team img:hover {
     transform: scale(1.05);
+}
+
+#readBtn {
+    padding: 10px 20px;
+    background-color: #b99277;
+    color: rgb(236, 234, 234);
+    border: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#readBtn:hover {
+    background-color: #a0522d;
 }
