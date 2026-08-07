@@ -65,11 +65,21 @@ body {
     background: linear-gradient(to right, purple, brown);
     
 }
+
+.grid{
+    display: block;
+    gap: 20px;
+    justify-items: center;
+    margin: 10px;
+}
+
 #history {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(233, 209, 254);
     font-size: large ;
     font-weight: bolder;
+    text-align: center;
+
 }
  
 #header {
