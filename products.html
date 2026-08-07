@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harebell restaurant</title>
-    <link rel="stylesheet" href="products.css">
-    <link rel="https://fonts.googlepis.com/css2?family=Poppins:wght@300;
-    400;600&display=swap"rel="stylesheet">
-    
+    <title>Sweet Crumb Bakery — Menu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body> 
-    <header>
-    <h1>Our Bakery Products</h1>
-    <p>Freshly baked cakes with love</p>
+<body>
+  <header>
+    <nav class="site-nav">
+      <div class="logo">🍞 Sweet Crumb Bakery</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <h1>Our Bakery Products</h1>
+      <p>Freshly baked cakes and pastries made with love</p>
     </header>
 
     <section class="search section">
-        <input type="text" id="search"
-        placeholder="search for a product">
+        <input type="text" id="search" placeholder="Search for a product">
     </section>
 
     <section class="categories">
@@ -30,61 +39,62 @@
         <button>Donuts</button>
     </section>
 
-    <section class="products">
+    <section class="products product-grid">
         <div class="product-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYt_a0uDkls0sEGxP9LNFWLgsmKyR3ljsEbZTsuRzeQA&s=10" alt="Chocolate cake">
             <h2>CHOCOLATE CAKE</h2>
-            <p>Rich chocolate cake topped with smooth chocolate
-                frosting.</p>
-                <h3>KSH 1800</h3>
-                <button>Add to cart</button>
+            <p>Rich chocolate cake topped with smooth chocolate frosting.</p>
+            <h3>KSH 1800</h3>
+            <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerseizbpB8X-KX4N1NGdO-HT4L2GKeymczz2F1QI3Sw&s=10" alt="Strawberry cake">
             <h2>STRAWBERRY CAKE</h2>
-            <p>Soft vanilla sponge layered with fresh strawberries</p>
+            <p>Soft vanilla sponge layered with fresh strawberries.</p>
             <h3>KSH 2000</h3>
-            <button>Add to cart</button>
+            <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsDxcy5eztMxHc4LPBUWSWin7DKEeA1c1DP__zfO6Fqg&s=10" alt="Cupcakes">
             <h2>VANILLA CUPCAKE</h2>
-            <p>Fluffy cupcake topped with bitter cream icing</p>
+            <p>Fluffy cupcake topped with buttercream icing.</p>
             <h3>KSH 250</h3>
-            <button>Add to cart</button>
+            <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoa2J0_XS89riSuydYgQfydODIG4fOEEWjiNchR5Pw4A&s=10" alt="Donut">
             <h2>PINK DONUT</h2>
-            <p>Soft donut covered in sweet strawberry</p>
+            <p>Soft donut covered in sweet strawberry glaze.</p>
             <h3>KSH 180</h3>
-            <button>Add to cart</button>
+            <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFh6mc2cprTdyFkepxcnpWoWH0V0dlqX_-4f09bMb3aQ&s=10" alt="Cookies">
             <h2>CHOCOLATE COOKIES</h2>
-            <p>Crispy cookies packed with chocolate chips</p>
+            <p>Crispy cookies packed with chocolate chips.</p>
             <h3>KSH 180</h3>
-            <button>Add to cart</button>
+            <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRPbo_tpna1O7j91j-PidH77n_eesm5BDXIfAWPqQRvw&s=10" alt="Bread">
             <h2>FRESH BREAD</h2>
-            <p>Freshly baked bread,soft on the inside and crispy outside</p>
+            <p>Freshly baked bread, soft on the inside and crispy outside.</p>
             <h3>KSH 220</h3>
-            <button>Add to cart</button>
+            <button class="btn">Add to cart</button>
         </div>
     </section>
 
-        <footer>
-            <p>&copy; 2026 Harebell Bakery</p>
-        </footer>
-        <script src="products.js"></script>
+  </main>
 
+  <footer id="contact">
+    <p>&copy; 2026 Sweet Crumb Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="products.js"></script>
 </body>
 </html>
